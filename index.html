@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="header"></div>
     <div class="instructions">Instructions here</div>
-    <div id="goalNumber"></div>
-    <div id="userTotal"></div>
-    <div class="pinkGem button"></div>
-    <div class="greenGem button"></div>
-    <div class="yellowGem button"></div>
-    <div class="blueGem button"></div>
-
+    <div class = "stat">
+        <h3>Goal number:</h3>
+        <div id="goalNumber"></div>
+    </div>
+    <div class = "stat">
+            <h3>Your total:</h3>
+            <div id="userTotal"></div>
+    </div>
+    <br>
+    <div class="button-section">
+        <button class="pinkGem button"><img src="assets/images/gems-02.png" alt="pink"></button>
+        <button class="greenGem button"><img src="assets/images/gems-04.png" alt="green"></button>
+        <button class="yellowGem button"><img src="assets/images/gems-03.png" alt="yellow"></button>
+        <button class="blueGem button"><img src="assets/images/gems-05.png" alt="blue"></button>
+    </div>
+    <div class = "stat">
+        <h3>Wins:</h3>
+        <div id="wins"></div>
+    </div><div class = "stat">
+        <h3>Losses:</h3>
+        <div id="losses"></div>
+    </div>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="game.js"></script>
 </html>
