@@ -1,1 +1,3 @@
-# CrystalsCollector
+# CrystalCollector
+
+Using jQuery.
