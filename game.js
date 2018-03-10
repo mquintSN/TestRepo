@@ -8,6 +8,15 @@ var yellowCrystal = 0;
 var blueCrystal = 0;
 // Declare global variables
 
+
+$("button").mouseenter(function() {
+    $(this).animate({opacity: .5}, 0);
+});
+
+$("button").mouseleave(function() {
+    $(this).animate({opacity: 1.0}, 0);
+});
+
 function setValues (){
 	userTotal = 0;
     targetNumber = Math.floor(Math.random() * 120 + 19);
@@ -15,14 +24,13 @@ function setValues (){
     greenCrystal= Math.floor(Math.random() * 12 + 1);
     blueCrystal= Math.floor(Math.random() * 12 + 1);
     yellowCrystal= Math.floor(Math.random() * 12 + 1);
+    $("button").animate({opacity: '0.3'}, 100);
+    $("button").animate({opacity: '1'}, 300);
 
     $("#goalNumber").text(targetNumber);
     $("#userTotal").text(userTotal);
     $("#losses").text(losses);
     $("#wins").text(wins);
-
-    $("button").animate({opacity: '0.3'}, 100);
-    $("button").animate({opacity: '1'}, 300);
     // $("button").effect("shake");
 }
 

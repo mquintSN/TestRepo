@@ -1,3 +1,79 @@
+.goal-number{
+    border: 4px solid #e62255;
+    border-radius: 3px;
+
+    padding-top: 1px;
+    padding-bottom: 9px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
 button img {
-    height: 100px;
+    width: 100%;
+}
+
+button {
+    width: 24%;
+    background-color: white;
+    border: none;
+    padding: 0px;
+}
+
+.pinkGem {
+    /* margin-left: 2%; */
+}
+
+.stat {
+    text-align: center;
+    /* padding-top: 0; */
+}
+
+.pinkBG {
+    /* background-color: #e62255; */
+}
+
+.number {
+    font-size: 24px;
+}
+
+h3 {
+    /* font-size: 27px; */
+    font-family: 'Black Ops One', cursive;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+h4 {
+    font-family: 'Black Ops One', cursive;
+}
+
+h1{
+    text-align: center; 
+    font-size: 10vw;
+    font-family: 'Black Ops One', cursive;
+}
+
+span.pink{
+    color: #e62255;
+}
+
+span.blue{
+    color: #67c8f2;
+}
+
+span.yellow{
+    color: #fec143;
+}
+
+span.green{
+    color: #a8d165;
+}
+
+@media screen and (max-width: 990px) {
+
+p{
+    font-size: 15px;
+}
 }

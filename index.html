@@ -4,34 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="header"></div>
-    <div class="instructions">Instructions here</div>
-    <div class = "stat">
-        <h3>Goal number:</h3>
-        <div id="goalNumber"></div>
-    </div>
-    <div class = "stat">
-            <h3>Your total:</h3>
-            <div id="userTotal"></div>
+    <div class="row">
+        <div class="header col-xs-12">
+            <h1> 
+                <span class="blue">C</span> 
+                <span class="green">R</span> 
+                <span class="yellow">Y</span> 
+                <span class="pink">S</span> 
+                <span class="blue">T</span> 
+                <span class="green">A</span> 
+                <span class="yellow">L</span> 
+                <br>
+                <span class="blue">C</span> 
+                <span class="green">O</span> 
+                <span class="yellow">L</span> 
+                <span class="pink">L</span> 
+                <span class="blue">E</span> 
+                <span class="green">C</span> 
+                <span class="yellow">T</span> 
+                <span class="pink">O</span> 
+                <span class="blue">R</span> 
+                <span class="green">!</span> 
+                </h1>
+        </div>
     </div>
     <br>
-    <div class="button-section">
-        <button class="pinkGem button"><img src="assets/images/gems-02.png" alt="pink"></button>
-        <button class="greenGem button"><img src="assets/images/gems-04.png" alt="green"></button>
-        <button class="yellowGem button"><img src="assets/images/gems-03.png" alt="yellow"></button>
-        <button class="blueGem button"><img src="assets/images/gems-05.png" alt="blue"></button>
+<div class="container">  
+    <div class="row">
+        <div class="col-sm-3 main-block1">
+                <h4>Instructions</h4>
+                <p>You will be given a random goal number at the start of the game. Each crystal has a hidden
+                    value that will be added to your total when you click it.  You win if your total score matches the goal number.
+                    You lose if your score goes above the goal number. The crystal values change each game. 
+                    </p>
+        </div>
+        <br>
+        <div class="col-sm-9 main-block2">
+            <div class="row">
+                
+                    <div class="col-md-5 col-md-offset-2 col-sm-6">
+                        <div class = "stat goal-number">
+                            <h3>Goal number:</h3>
+                            <div class="number" id="goalNumber"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-6">
+                        <div class = "stat">
+                            <h3>Your total:</h3>
+                            <div class="number" id="userTotal"></div>
+                        </div>
+                    </div>
+                
+            </div> 
+            
+            <br>
+
+            <div class="row">
+                <div class="col-md-10 col-md-offset-2 col-sm-12  ">
+                    <button class="pinkGem button"><img src="assets/images/gems-02.png" alt="pink"></button>
+                    <button class="greenGem button"><img src="assets/images/gems-04.png" alt="green"></button>
+                    <button class="yellowGem button"><img src="assets/images/gems-03.png" alt="yellow"></button>
+                    <button class="blueGem button"><img src="assets/images/gems-05.png" alt="blue"></button>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-5 col-md-offset-2 col-sm-6">
+                    <div class = "stat">
+                        <h3>Wins:</h3>
+                        <div class="number" id="wins"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-sm-6">
+                    </div><div class = "stat">
+                        <h3>Losses:</h3>
+                        <div class="number" id="losses"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
-    <div class = "stat">
-        <h3>Wins:</h3>
-        <div id="wins"></div>
-    </div><div class = "stat">
-        <h3>Losses:</h3>
-        <div id="losses"></div>
-    </div>
+</div> 
 </body>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
