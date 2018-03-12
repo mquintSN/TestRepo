@@ -31,10 +31,9 @@ function setValues (){
     $("#userTotal").text(userTotal);
     $("#losses").text(losses);
     $("#wins").text(wins);
-    // $("button").effect("shake");
 }
 
-// Document.ready thing
+
 
 setValues()
 
@@ -52,7 +51,7 @@ $("button").on("click", function() {
 		userTotal = userTotal + blueCrystal; 
         $("#userTotal").text(userTotal);
     }
-    // } etc.
+ 
     if ( userTotal > targetNumber) {
         losses ++;
         setValues()
